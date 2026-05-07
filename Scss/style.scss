@@ -1,0 +1,15 @@
+// Foundation
+@use "foundation/reset";
+@use "foundation/base";
+
+// Layout
+@use "layout/header";
+@use "layout/hero";
+@use "layout/about";
+@use "layout/product";
+@use "layout/news";
+@use "layout/faq";
+@use "layout/access";
+@use "layout/footer";
+@use "layout/contact";
+// 残りも同じように書く…

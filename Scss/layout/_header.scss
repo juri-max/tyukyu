@@ -1,0 +1,11 @@
+.header {
+    max-width: 1280px;
+    width: 100%;
+    height: 100%;
+    background-color: #FDF9EF;
+    position: relative;
+
+    &__logo {
+        transform: translateY(-50%); 
+    }
+}

@@ -1,0 +1,35 @@
+.hero {
+    max-width: 1280px;
+    width: 100%;
+    img {
+        height: 50%;
+        object-fit: cover;
+    }
+    position: relative;
+
+    &__text {
+        position: absolute;
+        writing-mode: vertical-rl;
+        top: 13%;
+        right: 11.3%;
+        align-items: flex-start;
+        gap: 20px;
+
+
+        p {    
+            display: inline-block;  
+            background-color: rgba(255, 255, 255);
+            font-size: 35px;            
+            padding: 6px 6px 0 8px;
+            width: 62px;
+            height: 433px;
+            margin-left: 20px;
+            font-weight: 700;
+            letter-spacing: 0.35em;
+        }
+    }
+
+    &__text-short {
+        height: 150px !important;
+    }
+}

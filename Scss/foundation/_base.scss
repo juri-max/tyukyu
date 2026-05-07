@@ -1,0 +1,21 @@
+
+body {
+    font-size: 100%;
+    color: #4E301B;
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom; // 画像下の余白を消す
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: #4E301B;
+    text-decoration: none;
+}
