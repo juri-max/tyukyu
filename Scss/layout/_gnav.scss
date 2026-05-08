@@ -1,0 +1,25 @@
+.gnav {
+    padding-top: 53px;
+    .gnav-inner {
+        max-width: 1040px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 0 120px 0 87px;
+
+        .gnav-list-left {
+            display: flex;
+            align-items: center;
+            gap: 39px;
+            padding-right: 39px;
+        }
+
+        .gnav-list-right {
+            display: flex;
+            align-items: center;
+            gap: 39px;
+            padding-left: 39px;
+        }
+        
+    }
+}

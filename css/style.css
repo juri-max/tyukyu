@@ -239,7 +239,40 @@ a {
   position: relative;
 }
 .header__logo {
-  transform: translateY(-50%);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -47%);
+}
+.header__logo .cattle-mark {
+  width: 156px;
+  height: 150px;
+  background-color: #FDF9EF;
+  padding-inline: 30px;
+  border-radius: 50%;
+}
+
+.gnav {
+  padding-top: 53px;
+}
+.gnav .gnav-inner {
+  max-width: 1040px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0 120px 0 87px;
+}
+.gnav .gnav-inner .gnav-list-left {
+  display: flex;
+  align-items: center;
+  gap: 39px;
+  padding-right: 39px;
+}
+.gnav .gnav-inner .gnav-list-right {
+  display: flex;
+  align-items: center;
+  gap: 39px;
+  padding-left: 39px;
 }
 
 .hero {
@@ -275,4 +308,8 @@ a {
 }
 .hero__text-short {
   height: 150px !important;
+}
+
+.about {
+  background-color: #FDF9EF;
 }/*# sourceMappingURL=style.css.map */
