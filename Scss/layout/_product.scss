@@ -1,0 +1,56 @@
+.product {
+    background-color: #FDF9EF;
+    padding-top: 105px;
+    margin-bottom: 91px;
+    max-width: 1280px;
+    width: 100%;
+
+    &__inner {
+        text-align: center;
+    }
+
+    &__ttl {
+        font-size: 32px;
+        margin-bottom: 91px;
+    }
+
+}
+
+.swiper-slide {
+    width: 264px;
+    height: 331px;
+    box-shadow: 2px 4px 5px rgb(228, 226, 226);
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    gap: 24px;
+    margin-bottom: 94px;
+    figure {
+        img {
+            height: 166px;
+            display: block;
+            object-fit: cover;
+            width: 100%;
+        }
+    }
+
+    &__text-box {
+        padding: 16px 16px 0 16px;
+        text-align: left;
+        margin-right: 24px;
+
+        & &-headeing {
+            font-size: 16px;
+            letter-spacing: 0.05em;
+            line-height: 1.5;
+        }
+
+        & &-desc {
+            padding-top: 14px;
+        }
+    }
+
+
+}
+
+
+
