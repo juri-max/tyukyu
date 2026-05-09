@@ -1,0 +1,22 @@
+/*画像の配置*/
+.middel-pic {
+    position: relative;
+    margin-left: auto;
+}
+
+.insert-pic {
+    z-index: 1000;
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+
+
+.insert-pic_right {
+    display: block;
+}
+
+.insert-pic1 {
+    width: 185px;
+    height: auto;
+}

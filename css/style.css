@@ -403,4 +403,42 @@ a {
 }
 .swiper-slide__text-box .swiper-slide__text-box-desc {
   padding-top: 14px;
+}
+
+.news {
+  max-width: 1280px;
+  width: 100%;
+}
+.news__inner {
+  width: 934px;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 90px;
+  position: relative;
+}
+.news__title {
+  font-size: 32px;
+  padding-bottom: 90px;
+}
+.news__item {
+  display: flex;
+  text-align: left;
+  border-top: 1px solid #C6C6C6;
+}
+.news__item:last-child {
+  border-bottom: 1px solid #C6C6C6;
+}
+.news dl {
+  flex-wrap: wrap;
+  width: 100%;
+  line-height: 1.3;
+}
+.news dt {
+  padding: 24px 2px 0;
+  width: 20%;
+}
+.news dd {
+  padding: 22px 0;
+  width: 80%;
 }/*# sourceMappingURL=style.css.map */
