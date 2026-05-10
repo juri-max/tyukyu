@@ -6,17 +6,18 @@
     position: relative;
 
     &__logo {
+        background-color: #FDF9EF;
         position: absolute;
         top: 0;
         left: 50%;
         transform: translate(-50%, -47%); 
+        padding: 30px;
+        border-radius: 50%;
 
         .cattle-mark {
-            width: 156px;
-            height: 150px;
-            background-color: #FDF9EF;
-            padding-inline: 30px;
-            border-radius: 50%;
+            width: 94px;
+            height: 94px;
+            object-fit: cover;
         }
     }
 

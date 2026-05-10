@@ -1,17 +1,24 @@
 .gnav {
-    padding-top: 53px;
     .gnav-inner {
         max-width: 1040px;
         width: 100%;
+        height: auto;
         display: flex;
         justify-content: center;
-        margin: 0 120px 0 87px;
+        margin-left: auto;
+        margin-right: auto;
 
         .gnav-list-left {
             display: flex;
             align-items: center;
             gap: 39px;
             padding-right: 39px;
+            padding-top: 52px;
+        }
+
+        .gnav-item-name {
+            margin-top: 55px;
+
         }
 
         .gnav-list-right {
@@ -19,6 +26,8 @@
             align-items: center;
             gap: 39px;
             padding-left: 39px;
+            padding-right: 60px;
+            padding-top: 52px;
         }
         
     }

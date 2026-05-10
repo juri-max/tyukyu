@@ -1,0 +1,88 @@
+.faq {
+    max-width: 1280px;
+    width: 100%;
+    height: auto;
+    background-color: #FDF9EF;
+    text-align: center;
+
+    &__question {
+        background-color: #FFFFFF;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        cursor: pointer;
+        padding: 12px 0 10px 0;
+        gap: 12px;
+        font-size: 18px;
+        font-weight: 700;
+        text-align: left;
+
+    }
+
+    &_inner {
+        max-width: 740px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    &_title {
+        padding-top: 91px;
+        padding-bottom: 73px;
+        font-size: 32px;
+        text-align: center;
+    }
+
+    &__list {
+        max-width: 740px;
+        width: 100%;
+        margin: 0 auto;
+        padding-inline: 15px;
+        text-align: left;
+    }
+
+    &__q {
+        font-family: "Roboto", sans-serif;
+        font-size: 24px;
+    }
+
+    &__text {
+        flex: 1;
+    }
+
+    &__icon {
+        width: 15px;
+        height: 15px;
+        flex-shrink: 0;
+        position: relative; // これが必要！
+        display: inline-block; // これも追加
+        margin-right: 7px;
+
+
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            width: 12px;
+            height: 3px;
+            background: #C6C6C6;
+            top: 50%;
+            left: 10%;
+        }
+
+        &::before {
+            right: 50%;
+            transform: rotate(44deg);
+        }
+
+        &::after {
+            left: 50%;
+            transform: rotate(-44deg);
+        }
+    }
+
+    &__answer {
+        padding-top: 24px;
+        padding-bottom: 31px;
+    }
+    
+}
