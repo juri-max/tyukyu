@@ -49,18 +49,18 @@
 
         <nav class="gnav">
             <div class="gnav-inner">
-                <ul class="gnav-list-left">
-                    <li><a href="#about">この農園について</a></li>
-                    <li><a href="#product">製品一覧</a></li>
-                    <li><a href="#news">お知らせ</a></li>
+                <ul class="gnav-list-container">
+                    <li class="gnav__item"><a href="#about">この農園について</a></li>
+                    <li class="gnav__item"><a href="#product">製品一覧</a></li>
+                    <li class="gnav__item"><a href="#news">お知らせ</a></li>
                 </ul>
 
                 <div class="gnav-item-name"><a href="#top"><img src="img/logo-02.png" alt="Takeshima Goto Farm"></a></div>
 
-                <ul class="gnav-list-right">
-                    <li><a href="#faq">FAQ</a></li>
-                    <li><a href="#access">アクセス</a></li>
-                    <li><a href="#contact">お問い合わせ</a></li>
+                <ul class="gnav-list-container">
+                    <li class="gnav__item"><a href="#faq">FAQ</a></li>
+                    <li class="gnav__item"><a href="#access">アクセス</a></li>
+                    <li class="gnav__item"><a href="#contact">お問い合わせ</a></li>
                 </ul>
             </div>
         </nav> 
@@ -233,7 +233,7 @@
                                 <span class="faq__text">冷蔵便で配送できますか？</span>
                                 <span class="faq__icon"></span>
                             </button>
-                        <dt>
+                        </dt>
                         <dd class="faq__answer">
                             <p>冷蔵便に対応しています。その場合別途150円かかります。</p>
                         </dd>
@@ -246,7 +246,7 @@
                                 <span class="faq__text">どのような支払い方法がありますか？</span>
                                 <span class="faq__icon"></span>
                             </button>
-                        <dt>
+                        </dt>
                         <dd class="faq__answer">
                             <p>商品代引きとクレジットカード決済があります。代引き手数料は、10,800円未満で税込330円・10,800円以上32,400円未満で税込440円・32,400円以上102,400円未満で税込660円です。手数料はお客様のご負担となりますのでご了承ください。クレジットカード決済は、JCB・VISA・master・ダイナース・アメリカンエキスプレスのマークが入っているカードすべてご利用になれます。</p>
                         </dd>
@@ -259,7 +259,7 @@
                                 <span class="faq__text">プレゼント用にラッピングすることはできますか？</span>
                                 <span class="faq__icon"></span>
                             </button>
-                        <dt>
+                        </dt>
                         <dd class="faq__answer">
                             <p>ラッピングが必要な場合は、購入時にフォームの「ラッピングを希望」にチェックを入れてください</p>
                         </dd>
@@ -272,7 +272,7 @@
                                 <span class="faq__text">いちご狩りの予約は必要ですか</span>
                                 <span class="faq__icon"></span>
                             </button>
-                        <dt>
+                        </dt>
                         <dd class="faq__answer">
                             <p>繁忙期（1~3月、GW期間中）の土日祝は予約は遠慮いただいておりますが、平日または繁忙期以外の土日祝はご予約可能です。</p>
                         </dd>
@@ -285,26 +285,131 @@
                                 <span class="faq__text">海外発送できますか？</span>
                                 <span class="faq__icon"></span>
                             </button>
-                        <dt>
+                        </dt>
                         <dd class="faq__answer">
                             <p>現在のところ対応できておりません。海外からのご注文で日本国内への発送は承っております。</p>
                         </dd>
                     </div>                      
                 </dl>
             </div><!--faq-inner-->
-        </section>            
+        </section>    
+        
+        <!--フルーツグラノーラ画像-->
+
         <!-- アクセス -->
         <section id="access" class="access">
+            <div class="access__inner">
+                <h2 class="access__title">アクセス</h2>
+                <div class="access__information">
+                    <div class="access__information__text">
+                        <dl class="access__information__text__profile">
+                            <dt>会社名</dt>
+                            <dd>蓼科ごとう農園</dd>
+                            <dt>代表者名</dt>
+                            <dd>後藤 優香</dd>
+                            <dt>所在地</dt>
+                            <dd>長野県茅野市北山×××××</dd>
+                            <dt>E-mail</dt>
+                            <dd>tateshina-goto@gmail.com</dd>
+                        </dl>
+                    </div>
 
+                    <div class="access__information__map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51601.383345936396!2d138.23034118580034!3d36.066995202313635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601c4e5d08f6a63d%3A0xf7d929f1922a7056!2z44CSMzkxLTAzMDEg6ZW36YeO55yM6IyF6YeO5biC5YyX5bGx!5e0!3m2!1sja!2sjp!4v1778444671241!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
         </section>             
         <!-- お問い合わせ -->
         <section id="contact" class="contact">
+            <div class="contact__inner">
+                <h2 class="contact__title">お問い合わせ</h2>
+                <p class="contact__guidance">ご購入・販売に関しましては、下記よりお気軽にお問い合わせください。</p>
 
+                <div class="contact__mailform">
+                    <h3 class="contact__mailform__title">お問い合わせメールフォーム</h3>
+                    <!-- お問い合わせ種類 -->
+                    <div class="contact__row">
+                        <div class="contact__label">
+                            <label>お問い合わせ種類</label>
+                            <span class="contact__required">必須</span>
+                        </div>
+                        <div class="contact__input">
+                            <label><input type="radio" name="type" value="弊社製品について"> 弊社製品について</label>
+                            <label><input type="radio" name="type" value="いちご狩りについて"> いちご狩りについて</label>
+                            <label><input type="radio" name="type" value="その他のお問い合わせ"> その他のお問い合わせ</label>
+                        </div>
+                    </div><!--contact__row-->
+
+                    <!--お名前-->
+                    <div class="contact__row">
+                        <div class="contact__label">
+                            <label for="name">お名前</label>
+                            <span class="contact__required">必須</span>
+                        </div>
+
+                        <div class="contact__input">
+                            <input type="text" id="name" name="name" placeholder="">
+                        </div>
+                    </div><!--contact__row-->
+
+                    <!--ご住所-->
+                    <div class="contact__row">
+                        <div class="contact__label">
+                            <label for="address">ご住所</label>
+                            <span class="contact__required">必須</span>
+                        </div>
+                        <div class="contact__input">
+                            <input type="text" id="address" name="address" placeholder="">
+                        </div>
+                    </div><!--contact__row-->
+
+                    <!--メールアドレス-->
+                    <div class="contact__row">
+                        <div class="contact__label">
+                            <label for="mailadress">メールアドレス</label>
+                            <span class="contact__required">必須</span>
+                        </div>
+                        <div class="contact__input">
+                            <input type="email" id="email" name="address" placeholder="">
+                        </div>
+                    </div><!--contact__row-->                    
+
+                    <!--電話番号-->
+                    <div class="contact__row">
+                        <div class="contact__label">
+                            <label for="tel">電話番号</label>
+                            <span class="contact__required">必須</span>
+                        </div>
+                        <div class="contact__input">
+                            <input type="tel" id="tel" name="tel" placeholder="">
+                        </div>                        
+                    </div><!--contact__row--> 
+                    
+                    <!--お問い合わせ内容 -->
+                    <div class="contact__row">
+                        <div class="contact__label">
+                            <label for="message">お問い合わせ内容</label>
+                            <span class="contact__required">必須</span>
+                        </div>
+                        <div class="contact__input">
+                            <textarea name="message" id="message"></textarea>
+                        </div>                        
+                    </div><!--contact__row-->        
+                    
+                    <!--送信ボタン-->
+                    <div class="contact__submit">
+                        <button type="submit">送信する</button>
+                    </div><!--contact__submit-->
+                    
+                </div><!--contact__mailform-->
+            </div><!--contact__inner-->
         </section>  
     </main>
 
     <footer class="footer"></footer>
 
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
 </body>

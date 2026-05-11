@@ -1,4 +1,4 @@
-/* スワイパーの設定*/
+/* スワイパーの設定（製品一覧）*/
 const swiper = new Swiper('.swiper', {
     loop: false,
     loopAdditionalSlides: 1,
@@ -22,3 +22,18 @@ const swiper = new Swiper('.swiper', {
     }
 });
 
+
+/*アコーディオン（FAQ) */
+
+$(function() {
+  $('.faq__question').on('click', function() {
+    const $item = $(this).closest('.faq__item');
+
+    $('.faq__item').not($item)
+      .removeClass('is-open')
+      .find('.faq__answer').slideUp(300);
+
+    $item.toggleClass('is-open');
+    $item.find('.faq__answer').slideToggle(300);
+  });
+});

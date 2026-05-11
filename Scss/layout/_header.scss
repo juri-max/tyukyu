@@ -11,12 +11,12 @@
         top: 0;
         left: 50%;
         transform: translate(-50%, -47%); 
-        padding: 30px;
+        padding: 29px;
         border-radius: 50%;
 
         .cattle-mark {
-            width: 94px;
-            height: 94px;
+            width: 100%;
+            height: auto;
             object-fit: cover;
         }
     }
