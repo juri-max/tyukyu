@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   -webkit-text-size-adjust: 100%;
   box-sizing: border-box;
@@ -431,7 +432,7 @@ a {
   height: auto;
   margin: 0 auto;
   text-align: center;
-  padding-bottom: 90px;
+  padding-bottom: 20px;
   position: relative;
 }
 .news__title {
@@ -485,7 +486,7 @@ a {
   margin: 0 auto;
 }
 .faq_title {
-  padding-top: 97px;
+  padding-top: 50px;
   padding-bottom: 70px;
   font-size: 32px;
   text-align: center;
@@ -549,11 +550,10 @@ a {
 }
 
 .access {
-  padding-top: 85px;
   max-width: 1280px;
   width: 100%;
   height: auto;
-  padding-bottom: 78px;
+  padding-bottom: 99px;
 }
 .access__inner {
   max-width: 990px;
@@ -589,7 +589,7 @@ a {
 }
 .access dt, .access dd {
   border-bottom: 1px solid #C6C6C6;
-  padding-bottom: 15px;
+  padding-bottom: 16px;
   font-weight: 700;
 }
 .access dd {
@@ -601,12 +601,59 @@ a {
   padding-top: 10px;
 }
 
+.footer {
+  max-width: 1280px;
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+.footer__upper {
+  max-width: 740px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+  padding: 25px 0;
+}
+.footer__img-strawberry {
+  position: absolute;
+  left: 0;
+  bottom: 17%;
+}
+.footer__img-cow {
+  position: absolute;
+  right: 0;
+  bottom: 17%;
+}
+.footer__logo {
+  margin-bottom: 25px;
+}
+.footer__logo img:first-child {
+  display: block;
+  margin: 0 auto 12px;
+}
+.footer__nav {
+  display: flex;
+  justify-content: center;
+}
+.footer__nav-list {
+  display: flex;
+}
+.footer__nav-list li {
+  padding-left: 24px;
+}
+.footer__lower {
+  background-color: #D9D9D9;
+  text-align: center;
+  padding: 20px 0;
+}
+
 .contact {
   max-width: 1280px;
   width: 100%;
   background-color: #FDF9EF;
   padding-top: 90px;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
 }
 .contact__inner {
   max-width: 740px;
@@ -634,12 +681,14 @@ a {
 .contact__mailform__title {
   text-align: center;
   font-size: 18px;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
 }
 .contact__row {
   display: flex;
   align-items: flex-start;
+  margin-top: 24px;
   margin-bottom: 24px;
+  flex-wrap: wrap;
 }
 .contact__label {
   display: flex;
@@ -661,6 +710,9 @@ a {
   flex: 1;
   width: 56%;
 }
+.contact__input#zip-wrap input, .contact__input input#zip {
+  width: 160px !important;
+}
 .contact__input input[type=text],
 .contact__input input[type=email],
 .contact__input input[type=tel] {
@@ -668,7 +720,7 @@ a {
   background-color: #F5F5F0;
   border: none;
   padding: 10px;
-  border-radius: 4px;
+  border-radius: 5px;
 }
 .contact__input textarea {
   width: 100%;
@@ -676,13 +728,12 @@ a {
   background-color: #F5F5F0;
   border: none;
   padding: 10px;
-  border-radius: 4px;
-  resize: vertical;
+  border-radius: 5px;
+  resize: none;
 }
 .contact__input label {
   display: flex;
   align-items: center;
-  margin-bottom: 8px;
 }
 .contact__input input[type=radio] {
   opacity: 0;
@@ -691,9 +742,9 @@ a {
 .contact__input input[type=radio] + label {
   display: inline-block;
   position: relative;
-  padding: 5px 0 5px 26px;
+  padding: 3px 0 5px 20px;
   cursor: pointer;
-  margin-bottom: 8px;
+  margin-bottom: 3px;
 }
 .contact__input input[type=radio] + label::before {
   content: "";
@@ -735,7 +786,7 @@ a {
   background-color: #ccc;
   color: #4E301B;
   border: none;
-  padding: 14px 60px;
+  padding: 14px 90px;
   border-radius: 10px;
   font-size: 16px;
   cursor: not-allowed;
@@ -745,6 +796,55 @@ a {
   color: #4E301B;
   cursor: pointer;
 }
+.contact .is-error input[type=text],
+.contact .is-error input[type=email],
+.contact .is-error input[type=tel],
+.contact .is-error textarea {
+  border: 1px solid #F7320E;
+  color: #F7320E;
+}
+.contact .error-text {
+  width: 100%;
+  padding-left: 44%;
+  display: none;
+  margin-top: 8px;
+  color: #F7320E;
+  font-weight: bold;
+  font-size: 14px;
+}
+.contact .error-text::before {
+  content: "⚠️";
+}
+.contact .is-error .error-text {
+  display: block;
+}
 
-/* insert-pic
------------------------------------------------------- *//*# sourceMappingURL=style.css.map */
+.section-img {
+  max-width: 1280px;
+  width: 100%;
+  position: relative;
+  width: 100%;
+  height: 120px;
+}
+.section-img img {
+  position: absolute;
+  width: 200px;
+}
+
+.section-img--grape img {
+  width: 235px;
+  right: 0;
+  top: 45px;
+}
+
+.section-img--granola img {
+  width: 349px;
+  left: 0;
+  top: -60px;
+}
+
+.section-img--sprouts img {
+  width: 264px;
+  right: 0;
+  top: 10px;
+}/*# sourceMappingURL=style.css.map */

@@ -3,7 +3,7 @@
     width: 100%;
     background-color: #FDF9EF;
     padding-top: 90px;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
 
     &__inner {
         max-width: 740px;
@@ -34,14 +34,16 @@
         &__title {
             text-align: center;
             font-size: 18px;
-            margin-bottom: 40px;
+            margin-bottom: 35px;
         }
     }
 
     &__row {
         display: flex;
         align-items: flex-start;
+        margin-top: 24px;
         margin-bottom: 24px;
+        flex-wrap: wrap;
     }
 
     &__label {
@@ -66,6 +68,10 @@
         flex: 1;
         width: 56%;
 
+        &#zip-wrap input,input#zip {
+            width: 160px !important;
+        }
+
         input[type="text"],
         input[type="email"],
         input[type="tel"] {
@@ -73,7 +79,7 @@
             background-color: #F5F5F0;
             border: none;
             padding: 10px;
-            border-radius: 4px;
+            border-radius: 5px;
         }
 
         textarea {
@@ -82,14 +88,13 @@
             background-color: #F5F5F0;
             border: none;
             padding: 10px;
-            border-radius: 4px;
-            resize: vertical;
+            border-radius: 5px;
+            resize: none;
         }
 
         label {
             display: flex;
             align-items: center;
-            margin-bottom: 8px;
         }
 
         // ラジオボタン非表示  
@@ -102,9 +107,9 @@
         input[type="radio"] + label {
             display: inline-block;
             position: relative;
-            padding: 5px 0 5px 26px;
+            padding: 3px 0 5px 20px;
             cursor: pointer;
-            margin-bottom: 8px;
+            margin-bottom: 3px;
 
             &::before {
                 content: '';
@@ -155,7 +160,7 @@
             background-color: #ccc;
             color: #4E301B;
             border: none;
-            padding: 14px 60px;
+            padding: 14px 90px;
             border-radius: 10px;
             font-size: 16px;
             cursor: not-allowed;
@@ -167,4 +172,32 @@
             }
         }
     }
+
+    .is-error {
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        textarea {
+            border: 1px solid #F7320E;
+            color: #F7320E;
+        }
+    }
+
+    .error-text {
+        width: 100%;
+        padding-left: 44%;
+        display: none;
+        margin-top: 8px;
+        color: #F7320E;
+        font-weight: bold;
+        font-size: 14px;
+
+        &::before {
+            content:'⚠️';
+        }
+    }
+
+    .is-error .error-text {
+        display: block;
+    }    
 }

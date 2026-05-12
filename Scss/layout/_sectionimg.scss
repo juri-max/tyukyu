@@ -1,0 +1,41 @@
+// 共通スタイル
+.section-img {
+    max-width: 1280px;
+    width: 100%;
+    position: relative;
+    width: 100%;
+    height: 120px;  // 画像エリアの高さ
+
+    img {
+        position: absolute;
+        width: 200px;  // 画像サイズ（後で調整）
+    }
+}
+
+// ブドウ（右側）
+.section-img--grape {
+    img {
+        width: 235px;
+        right: 0;
+        top: 45px;  // 上のセクションに少しかかる
+    }
+}
+
+// フルーツグラノーラ（左側）
+.section-img--granola {
+    img {
+        width: 349px;
+        left: 0;
+        top: -60px;
+    }
+}
+
+// 芽キャベツ（右側）
+.section-img--sprouts {
+    img {
+        width: 264px;
+        right: 0;
+        top: 10px;
+    }
+}
+

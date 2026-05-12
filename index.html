@@ -217,7 +217,9 @@
         </section>    
         
         <!--ブドウ画像-->
-
+        <div class="section-img section-img--grape">
+            <img src="img/grapes-middle.png" alt="ブドウ">
+        </div>
 
         <!-- FAQ -->
         <section id="faq" class="faq">
@@ -295,7 +297,9 @@
         </section>    
         
         <!--フルーツグラノーラ画像-->
-
+        <div class="section-img section-img--granola">
+            <img src="img/breakfast-middle.png" alt="フルーツグラノーラ">
+        </div>
         <!-- アクセス -->
         <section id="access" class="access">
             <div class="access__inner">
@@ -319,7 +323,13 @@
                     </div>
                 </div>
             </div>
-        </section>             
+        </section>
+
+        <!--芽キャベツ-->
+        <div class="section-img section-img--sprouts">
+            <img src="img/Brussels_sprouts-middle.png" alt="芽キャベツ">
+        </div>
+
         <!-- お問い合わせ -->
         <section id="contact" class="contact">
             <div class="contact__inner">
@@ -362,6 +372,7 @@
                             <div class="contact__input">
                                 <input type="text" id="name" name="name" placeholder="" required>
                             </div>
+                            <p class="error-text" role="alert" aria-live="polite" aria-hidden="true">お名前を入力してください。</p>
                         </div><!--contact__row-->
 
                         <!-- 郵便番号 -->
@@ -383,6 +394,7 @@
                             <div class="contact__input">
                                 <input type="text" id="address" name="address" placeholder="" required>
                             </div>
+                            <p class="error-text" role="alert" aria-live="polite" aria-hidden="true">ご住所を入力してください。</p>
                         </div><!--contact__row-->
 
                         <!--メールアドレス-->
@@ -394,6 +406,7 @@
                             <div class="contact__input">
                                 <input type="email" id="email" name="address" placeholder="" required>
                             </div>
+                            <p class="error-text" role="alert" aria-live="polite" aria-hidden="true">正しい形式のメールアドレスを入力してください。</p>
                         </div><!--contact__row-->                    
 
                         <!--電話番号-->
@@ -404,7 +417,8 @@
                             </div>
                             <div class="contact__input">
                                 <input type="tel" id="tel" name="tel" placeholder="" required>
-                            </div>                        
+                            </div>   
+                            <p class="error-text" role="alert" aria-live="polite" aria-hidden="true">電話番号を入力してください。</p>
                         </div><!--contact__row--> 
                     
                         <!--お問い合わせ内容 -->
@@ -415,7 +429,8 @@
                             </div>
                             <div class="contact__input">
                                 <textarea name="message" id="message" required></textarea>
-                            </div>                        
+                            </div>    
+                            <p class="error-text" role="alert" aria-live="polite" aria-hidden="true">お問い合わせ内容を入力してください。</p>                    
                         </div><!--contact__row-->        
                     
                         <!--送信ボタン-->
@@ -430,7 +445,37 @@
         </section>  
     </main>
 
-    <footer class="footer"></footer>
+    <footer class="footer">
+        <!-- 上エリア -->
+        <div class="footer__upper">
+            <img class="footer__img-strawberry" src="img/strawberry-middle.png" alt="手の上にイチゴ">
+            <img class="footer__img-cow" src="img/livestock-middle.png" alt="">
+            <!-- ロゴエリア -->
+            <div class="footer__logo">
+                <img src="img/logo-01.svg" alt="牛マーク">
+                <img src="img/logo-02.png" alt="蓼科ごとう農園 Tateshina Goto Farm">
+            </div>
+
+            <!-- ナビエリア -->
+            <nav class="footer__nav">
+                <ul class="footer__nav-list">
+                    <li><a href="#about">この農園について</a></li>
+                    <li><a href="#product">製品一覧</a></li>
+                    <li><a href="#news">お知らせ</a></li>
+                </ul>
+                <ul class="footer__nav-list">
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#access">アクセス</a></li>
+                    <li><a href="#contact">お問い合わせ</a></.>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- 下エリア（コピーライト） -->
+        <div class="footer__lower">
+            <p class="footer__copy">© 2019 GOTONOUEN.</p>
+        </div>
+</footer>
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>

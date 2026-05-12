@@ -67,3 +67,28 @@ $(document).ready(function() {
         }
     });
 });
+
+// エラーメッセージ
+$('input, textarea').each(function() {
+    $(this).on('change', function() {
+        if ($(this).is(':invalid')) {
+            $(this).parents('.contact__row').addClass('is-error');
+            $(this).parents('.contact__row').find('.error-text').attr('aria-hidden', false);
+        } else {
+            $(this).parents('.contact__row').removeClass('is-error');
+            $(this).parents('.contact__row').find('.error-text').attr('aria-hidden', true);
+        }
+    });
+});
+
+$('#js-submit').on('click', function() {
+    $('input, textarea').each(function() {
+        if ($(this).is(':invalid')) {
+            $(this).parents('.contact__row').addClass('is-error');
+            $(this).parents('.contact__row').find('.error-text').attr('aria-hidden', false);
+        } else {
+            $(this).parents('.contact__row').removeClass('is-error');
+            $(this).parents('.contact__row').find('.error-text').attr('aria-hidden', true);
+        }
+    });
+});
