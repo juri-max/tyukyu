@@ -92,3 +92,26 @@ $('#js-submit').on('click', function() {
         }
     });
 });
+
+//ハンバーガーメニュー
+// ハンバーガーメニューの開閉
+$('.header__hamburger').on('click', function() {
+    // ボタン・ナビ・オーバーレイのis-openを付け外し
+    $(this).toggleClass('is-open');
+    $('.gnav').toggleClass('is-open');
+    $('.overlay').toggleClass('is-open');
+});
+
+// オーバーレイをクリックしたら閉じる
+$('.overlay').on('click', function() {
+    $('.header__hamburger').removeClass('is-open');
+    $('.gnav').removeClass('is-open');
+    $(this).removeClass('is-open');
+});
+
+// ナビのリンクをクリックしたら閉じる
+$('.gnav__item a').on('click', function() {
+    $('.header__hamburger').removeClass('is-open');
+    $('.gnav').removeClass('is-open');
+    $('.overlay').removeClass('is-open');
+});

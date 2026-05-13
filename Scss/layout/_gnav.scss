@@ -20,15 +20,10 @@
 
     &__item {
         display: block;
+        flex: none;
 
-        &--last {
-            margin-right: -4%;
-        }
-
-        &--first {
-            margin-left: -4%;
-        }
-        
+        &--last { margin-right: -4%; }
+        &--first { margin-left: -4%; }
     }
 
     &-item-name {
@@ -42,5 +37,98 @@
             left: 50%;
             transform: translateX(-50%);
         }
+
+        .gnav-cattle-mark {
+            display: none;
+
+            @media (max-width: 767px) {
+                display: block;
+                width: 60px;
+                margin: 0 auto 8px;
+            }
+        }
+    }
+
+    @media (max-width: 1049px) {
+        &-inner {
+            flex-wrap: wrap;   
+            justify-content: center;
+            height: auto;
+            padding: 30px 0;
+        }
+
+        &-item-name {
+            order: -1;
+            width: 100%;
+            flex: none;
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 20px;
+
+            img {
+                position: static;
+                display: block;
+                margin: 0 auto;
+                transform: none;
+            }
+        }
+
+        &-list-container {
+            flex: none;
+            width: auto;
+            justify-content: center;
+            gap: 25px;
+            padding-top: 0;
+            padding-bottom: 16px;
+            padding-right: 15px;
+        }
+    }
+
+    @media (max-width: 767px) {
+        display: block;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 70%;
+        height: 100%;
+        background-color: #FDF9EF;
+        transform: translateX(100%);
+        transition: transform 0.3s;
+        z-index: 99;
+        padding-top: 80px;
+
+        &-inner {
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        &-list-container {
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            padding: 0;
+            width: 100%;
+        }
+
+        &-item-name {
+            display: block;
+            width: 100%;
+            flex: none;
+            text-align: center;
+            margin-bottom: 20px;
+            margin-top: 0;
+
+            img {
+                position: static;
+                transform: none;
+                display: block;
+                margin: 0 auto;
+            }
+        }
+        &.is-open {
+            transform: translateX(0);
+        }
+
     }
 }
