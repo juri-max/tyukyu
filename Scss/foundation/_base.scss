@@ -19,3 +19,14 @@ a {
     color: #4E301B;
     text-decoration: none;
 }
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 2s ease, transform 2s ease;
+
+    &.is-visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

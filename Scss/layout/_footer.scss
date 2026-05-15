@@ -18,12 +18,21 @@
         position: absolute;
         left: 0;
         bottom: 17%;
+
+        @media (max-width: 540px) {
+            width: 40%;
+            bottom: 9%;
+        }       
     }
 
     &__img-cow {
         position: absolute;
         right: 0;
         bottom: 17%;
+        @media (max-width: 540px) {
+            width: 40%;
+            bottom: 9%;
+        }            
     }    
 
     &__logo {
@@ -34,19 +43,39 @@
                 margin: 0 auto 12px;
             }
         }
+        
     }
 
     &__nav {
         display: flex;
         justify-content: center;
+
+        @media (max-width: 990px) {
+            gap: 40px;
+        }   
+        
+        @media (max-width: 767px) {
+            flex-direction: column;
+            gap: 5px;
+        }        
     }
 
     &__nav-list {
         display: flex;
         
         li {
+            font-weight: 700;
             padding-left: 24px;
         }
+
+        @media (max-width: 990px) {
+            flex-direction: column;
+
+            li {
+                padding-top: 33px;
+                padding-left: 0;
+            }
+        }        
     }
 
     &__lower {

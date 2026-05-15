@@ -28,7 +28,7 @@
 <body>
     <!-- ローディング -->
     <div class="loading">
-
+        <img src="img/logo-01.svg" alt="蓼科ごとう農園">
     </div>
     <!-- ヒーロー -->
     <section class="hero">
@@ -44,8 +44,8 @@
     <header class="header">  <!-- ヘッダー -->
         <div class="header__logo">
             <img class="cattle-mark" src="img/logo-01.svg" alt="牛マーク">
-            <img class="sp-logo" src="img/logo-02.png" alt="蓼科ごとう農園">
         </div><!--logo部分-->
+        <p class="header__sp-logo"><img class="sp-logo" src="img/logo-02.png" alt="蓼科ごとう農園"></p>
 
         <nav class="gnav">
             <div class="gnav-inner">
@@ -80,7 +80,7 @@
     <main>
         <!-- about -->
         <section id="about" class="about">
-            <div class="about-inner">
+            <div class="about-inner fade-in">
                 <div class="about__text">
                     <h2 class="about__title">蓼科の生きた豊かな恵みを、そのままに</h2>
                     <div class="about__txt">
@@ -112,7 +112,7 @@
         </section>
         <!-- 製品一覧 -->
         <section id="product" class="product">
-            <div class="product__inner">
+            <div class="product__inner fade-in">
                 <h2 class="product__ttl">製品一覧</h2>
 
                 <!-- Slider main container -->
@@ -202,7 +202,7 @@
         </section>
         <!-- お知らせ -->
         <section id="news" class="news">
-            <div class="news__inner">
+            <div class="news__inner fade-in">
                 <h2 class="news__title">お知らせ</h2>
                 <dl>
                     <div class="news__item">
@@ -228,7 +228,7 @@
         </div>
 
         <!-- FAQ -->
-        <section id="faq" class="faq">
+        <section id="faq" class="faq fade-in">
             <div class="faq-inner">
                 <h2 class="faq_title">FAQ</h2>
 
@@ -307,7 +307,7 @@
             <img src="img/breakfast-middle.png" alt="フルーツグラノーラ">
         </div>
         <!-- アクセス -->
-        <section id="access" class="access">
+        <section id="access" class="access fade-in">
             <div class="access__inner">
                 <h2 class="access__title">アクセス</h2>
                 <div class="access__information">
@@ -338,9 +338,9 @@
 
         <!-- お問い合わせ -->
         <section id="contact" class="contact">
-            <div class="contact__inner">
+            <div class="contact__inner fade-in">
                 <h2 class="contact__title">お問い合わせ</h2>
-                <p class="contact__guidance">ご購入・販売に関しましては、下記よりお気軽にお問い合わせください。</p>
+                <p class="contact__guidance">ご購入・販売に関しましては、<br>下記よりお気軽にお問い合わせください。</p>
 
                 <form action="" method="post" id="form">
                     <div class="contact__mailform">
@@ -410,7 +410,7 @@
                                 <span class="contact__required">必須</span>
                             </div>
                             <div class="contact__input">
-                                <input type="email" id="email" name="address" placeholder="" required>
+                                <input type="email" id="mailadress" name="address" placeholder="" required>
                             </div>
                             <p class="error-text" role="alert" aria-live="polite" aria-hidden="true">正しい形式のメールアドレスを入力してください。</p>
                         </div><!--contact__row-->                    
@@ -472,7 +472,7 @@
                 <ul class="footer__nav-list">
                     <li><a href="#faq">FAQ</a></li>
                     <li><a href="#access">アクセス</a></li>
-                    <li><a href="#contact">お問い合わせ</a></.>
+                    <li><a href="#contact">お問い合わせ</a></li>
                 </ul>
             </nav>
         </div>

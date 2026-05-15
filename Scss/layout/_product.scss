@@ -49,8 +49,22 @@
         }
     }
 
-
 }
 
+.swiper {
+    @media (max-width: 767px) {
+        z-index: auto !important;
+    }
+}
 
+.swiper-wrapper {
+    @media (max-width: 767px) {
+        z-index: auto !important;
+    }
+}
 
+.swiper-slide {
+    @media (max-width: 767px) {
+        z-index: auto !important;
+    }
+}

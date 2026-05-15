@@ -115,3 +115,31 @@ $('.gnav__item a').on('click', function() {
     $('.gnav').removeClass('is-open');
     $('.overlay').removeClass('is-open');
 });
+
+// スクロールふわっと表示
+$(function() {
+    const fadeInElements = $('.fade-in');
+
+    $(window).on('scroll', function() {
+        fadeInElements.each(function() {
+            const elemTop = $(this).offset().top;
+            const scrollBottom = $(window).scrollTop() + $(window).height();
+
+            if (scrollBottom > elemTop + 50) {
+                $(this).addClass('is-visible');
+            }
+        });
+    });
+
+    // ページ読み込み時にも一度実行
+    $(window).trigger('scroll');
+});
+
+
+// ローディング
+$(window).on('load', function() {
+    $('.loading').addClass('is-hidden');
+    setTimeout(function() {
+        $('.loading').hide();
+    }, 5000);
+});

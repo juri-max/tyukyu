@@ -4,6 +4,7 @@
     background-color: #FDF9EF;
     padding-top: 90px;
     padding-bottom: 50px;
+    padding-inline: 20px;
 
     &__inner {
         max-width: 740px;
@@ -22,14 +23,22 @@
         text-align: center;
         margin-bottom: 93px;
         letter-spacing: 3.0;
-        font-size: 18px;
+        font-size: clamp(0.875rem, 0.761rem + 0.48vw, 1.125rem);
         font-weight: 700;
+
+        br {
+            display: none;
+        }
     }
 
     &__mailform {
         background-color: #FFFFFF;
         padding: 37px 76px 40px 76px;
         border-radius: 8px;
+
+        @media (max-width: 767px) {
+            padding-inline: 33px;
+        }    
 
         &__title {
             text-align: center;
@@ -44,6 +53,11 @@
         margin-top: 24px;
         margin-bottom: 24px;
         flex-wrap: wrap;
+
+        @media (max-width: 767px) {
+            flex-direction: column;
+            
+        }    
     }
 
     &__label {
@@ -54,6 +68,10 @@
         flex-shrink: 0;
         font-weight: 700;
         color: #4E301B;
+
+        @media (max-width: 767px) {
+            width: 100%;
+        }        
     }
 
     &__required {
@@ -67,6 +85,11 @@
     &__input {
         flex: 1;
         width: 56%;
+
+        @media (max-width: 767px) {
+            width: 100%;
+            padding-top: 5px;
+        }    
 
         &#zip-wrap input,input#zip {
             width: 160px !important;

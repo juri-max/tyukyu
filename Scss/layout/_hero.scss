@@ -2,8 +2,10 @@
     max-width: 1280px;
     width: 100%;
     img {
-        height: 50%;
+        width: 100%;
+        height: 500px;
         object-fit: cover;
+        display: block;
     }
     position: relative;
 
@@ -14,6 +16,22 @@
         right: 11.3%;
         align-items: flex-start;
         gap: 20px;
+
+        @media (max-width: 767px) {
+            writing-mode: horizontal-tb; // 縦書き → 横書きに戻す
+            top: auto;                   // topの位置をリセット
+            bottom: 10%;                 // 下から配置
+            right: auto;                 // rightをリセット
+            left: 150px;                   // 中央寄せの基点
+            transform: translateX(-50%); // 中央に
+            display: flex;               // 3列を横並びに
+            flex-direction: column;      // 各pを縦積みに
+            gap: 8px;
+
+            br {
+                display: none;
+            }
+        }
 
 
         p {    
@@ -26,10 +44,23 @@
             margin-left: 20px;
             font-weight: 700;
             letter-spacing: 0.35em;
+
+            @media (max-width: 767px) {
+                width: auto;       // 幅をテキストに合わせる
+                height: auto;      // 高さもリセット
+                font-size: 20px;   // スマホ用フォントサイズ
+                padding: 4px 8px;
+                margin-left: 0;
+                letter-spacing: 0;
+            }            
         }
     }
 
     &__text-short {
         height: 150px !important;
+
+        @media (max-width: 767px) {
+            height: auto !important; 
+        }        
     }
 }

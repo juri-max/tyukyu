@@ -1,21 +1,42 @@
 .about {
     background-color: #FDF9EF;
-    padding-top: 60px;
+    padding-top: 80px;
     max-width: 1280px;
     width: 100%;
 
     &-inner {
+        max-width: 1200px;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
         display: flex;
         align-items: flex-start;
         position: relative;
+
+        @media (max-width: 767px) {
+           flex-direction: column;  // ← about-innerに移動！
+            align-items: center;
+        }    
     }
 
     &__text {
         display: inline-block;
         position: absolute;
         top: 7%;
-        left: 14%;
+        left: 13%;
         z-index: 1;
+        @media (max-width: 850px) {
+            left: 0;
+            padding-left: 5px;
+        }
+
+        @media (max-width: 767px) {
+            z-index: auto;
+            position: static;
+            text-align: center;
+            padding-inline: 20px;
+            padding-bottom: 20px;
+        }
     }
 
     
@@ -26,6 +47,10 @@
         color: #35A1C3;
         background-color: #FFFFFFE5;
         margin-bottom: 30px;
+
+        @media (max-width: 767px) {
+            font-size: 30px;
+        }    
     }
 
     &__desc {
@@ -34,17 +59,23 @@
         display: inline-block;
         padding: 15px;
         line-height: 2.5;
-    }
 
+        @media (max-width: 767px) {
+            br {
+                display: none;  // ← スマホ時にbrを非表示！
+            }    
+        }
+    }
+    
     &__images {
         display: flex;
         flex-direction: column;
         align-items: flex-end;
-        width: 100%;
-        height: auto;
-        flex-shrink: 0;
-        padding-right: 40px;
-        
+        margin-left: auto;
+        @media (max-width: 850px) {
+            padding-inline: 10px;
+        }
+
     }
     
     &__main__pic {
@@ -55,5 +86,9 @@
         display: block;
         border-radius: 50px;
         margin-top: 42px;
+    }
+
+    @media (max-width:767px) {
+        padding: 50px auto 0;
     }
 }    

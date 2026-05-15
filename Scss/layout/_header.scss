@@ -4,7 +4,7 @@
     height: 100%;
     background-color: #FDF9EF;
     position: relative;
-
+    z-index: 1;
     &__logo {
         background-color: #FDF9EF;
         position: absolute;
@@ -20,38 +20,27 @@
             object-fit: cover;
         }
 
-        .sp-logo {
-            display: none;  // PCでは非表示
+        @media (max-width: 767px) {
+            position: absolute;
+            left: 50%;
+            top: -70px;
+            transform: translateX(-50%);
+            background-color: #FDF9EF;  // 丸背景をなくす
+            border-radius: 50%;
+            padding: 25px;
+            text-align: center;
         }
 
+    }
+
+    &__sp-logo {
+        display: none;
+
         @media (max-width: 767px) {
-            position: relative;
-            left: auto;
-            transform: none;
-            background-color: transparent;
-            border-radius: 0;
-            padding: 30px 0 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-
-            .cattle-mark {
-                width: 96px;
-                display: block;
-                background-color: #FDF9EF;
-                width: 80px;
-                position: absolute;
-                top: -50%;
-                
-            }
-
-            .sp-logo {
-                display: block;  // スマホのみ表示
-                margin-top: 8px;
-                width: 160px;
-            }
-        }    
-
+            display: block;
+            text-align: center;
+            padding-top: 55px;
+        }
     }
 
     &__hamburger {
@@ -61,16 +50,19 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            width: 30px;
-            height: 22px;
-            background: none;
+            width: 48px;
+            height: 48px;
+            background: #FED966;
             border: none;
             cursor: pointer;
-            padding: 0;
+            padding: 16px;
             position: fixed;
             right: 20px;
             top: 20px;
-            z-index: 100;
+            z-index: 10000;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            align-items: center;
 
             span {
                 display: block;
@@ -83,13 +75,13 @@
            // ×マークのアニメーション
             &.is-open {
                 span:nth-child(1) {
-                    transform: translateY(10px) rotate(45deg);
+                    transform: translateY(6px) rotate(45deg);
                 }
                 span:nth-child(2) {
                     opacity: 0;  // 真ん中の線を消す
                 }
                 span:nth-child(3) {
-                    transform: translateY(-10px) rotate(-45deg);
+                    transform: translateY(-8px) rotate(-45deg);
                 }
             }            
         }
