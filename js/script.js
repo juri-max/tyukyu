@@ -1,7 +1,7 @@
 /* スワイパーの設定（製品一覧）*/
 const swiper = new Swiper('.swiper', {
-    loop: false,
-    loopAdditionalSlides: 1,
+    loop: true,
+    loopAdditionalSlides: 3,
     autoplay: {
         delay: 4000,/* 4秒ごとにスワイプされる*/
         disableOnInteraction: false,
