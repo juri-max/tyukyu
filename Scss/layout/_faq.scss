@@ -1,7 +1,4 @@
 .faq {
-    max-width: 1280px;
-    width: 100%;
-    height: auto;
     background-color: #FDF9EF;
     text-align: center;
     &__question {
@@ -15,13 +12,14 @@
         font-size: 18px;
         font-weight: 700;
         text-align: left;
+        color: #4E301B;
 
     }
 
     &_inner {
-        max-width: 740px;
+        max-width: 1280px;
         width: 100%;
-        margin: 0 auto;
+        height: auto;
     }
 
     &_title {

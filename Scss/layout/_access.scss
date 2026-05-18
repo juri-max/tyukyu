@@ -1,14 +1,11 @@
 .access {
-    max-width: 1280px;
-    width: 100%;
-    height: auto;
     padding-bottom: 99px;
     padding-inline: 30px;
 
     &__inner {
-        max-width: 990px;
-        height: auto;
+        max-width: 1280px;
         width: 100%;
+        height: auto;
         margin: 0 auto;
     }
 

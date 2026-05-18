@@ -1,11 +1,13 @@
 .hero {
-    max-width: 1280px;
-    width: 100%;
     img {
         width: 100%;
-        height: 854px;
+        height: auto;
         object-fit: cover;
         display: block;
+
+        @media (max-width: 540px) {
+            height: 400px;
+        }              
     }
     position: relative;
 
@@ -22,7 +24,7 @@
             top: auto;                   // topの位置をリセット
             bottom: 10%;                 // 下から配置
             right: auto;                 // rightをリセット
-            left: 150px;                   // 中央寄せの基点
+            left: 120px;                   // 中央寄せの基点
             transform: translateX(-50%); // 中央に
             display: flex;               // 3列を横並びに
             flex-direction: column;      // 各pを縦積みに
@@ -31,16 +33,20 @@
             br {
                 display: none;
             }
+
+            @media (max-width: 540px) {
+                bottom: 30%;
+            }                  
         }
 
 
         p {    
             display: inline-block;  
             background-color: rgba(255, 255, 255);
-            font-size: 35px;            
-            padding: 6px 6px 0 8px;
-            width: 62px;
-            height: 433px;
+            font-size: clamp(1rem, 0.606rem + 1.68vw, 3.125rem);            
+            padding: 6px 6px 6px 8px;
+            width: 100%;
+            height: auto;
             margin-left: 20px;
             font-weight: 700;
             letter-spacing: 0.35em;
@@ -52,12 +58,17 @@
                 padding: 2px;
                 margin-left: 0;
                 letter-spacing: 0;
-            }            
+                font-size: 20px;
+            }    
+            
+            @media (max-width: 540px) {
+                font-size: 14px;
+            }                  
         }
     }
 
     &__text-short {
-        height: 150px !important;
+        height: auto !important;
 
         @media (max-width: 767px) {
             height: auto !important; 

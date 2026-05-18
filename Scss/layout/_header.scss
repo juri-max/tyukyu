@@ -1,10 +1,14 @@
 .header {
-    max-width: 1280px;
-    width: 100%;
-    height: 100%;
+
     background-color: #FDF9EF;
     position: relative;
     z-index: 1;
+    &__inner {
+        max-width: 1500px;
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+    }
     &__logo {
         background-color: #FDF9EF;
         position: absolute;
@@ -15,9 +19,14 @@
         border-radius: 50%;
 
         .cattle-mark {
-            width: 100%;
+            width: 150px;
             height: auto;
             object-fit: cover;
+
+            @media (max-width:1400px) {
+                width: 100%;
+                height: auto;
+            }
         }
 
         @media (max-width: 767px) {

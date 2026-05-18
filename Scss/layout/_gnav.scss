@@ -1,8 +1,5 @@
 .gnav {
     &-inner {
-        max-width: 1060px;
-        width: 100%;
-        height: auto;
         display: flex;
         justify-content: center;
         padding-inline: 30px;
@@ -15,19 +12,23 @@
         display: flex;
         flex: 1 33%;
         justify-content: space-around;
-        padding-top: 92px;
+        padding-top: 100px;
     }
 
     &__item {
         display: block;
         flex: none;
-
+        font-size: 25px;
         &--last { margin-right: -4%; }
         &--first { margin-left: -4%; }
+
+        @media (max-width:1400px) {
+            font-size: 18px;
+        }
     }
 
     &-item-name {
-        margin-top: 57px;
+        margin-top: 65px;
         z-index: 1;
         flex: 1 33%;
         text-align: center;
@@ -36,6 +37,12 @@
             position: absolute;
             left: 50%;
             transform: translateX(-50%);
+            width: 400px;
+            height: auto;
+
+            @media (max-width:1400px) {
+                width: 300px;
+            }
         }
 
         .gnav-cattle-mark {

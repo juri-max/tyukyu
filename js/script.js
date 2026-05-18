@@ -1,6 +1,6 @@
 /* スワイパーの設定（製品一覧）*/
 const swiper = new Swiper('.swiper', {
-    loop: true,
+    loop: false,
     loopAdditionalSlides: 3,
     autoplay: {
         delay: 4000,/* 4秒ごとにスワイプされる*/
@@ -49,12 +49,12 @@ $(document).ready(function() {
     $form.find('input, textarea').on('change', function() {
         console.log('変更検知');
 
-        const allFilled = 
-            $form.find('input[type="text"]').toArray().every(el => $(el).val() !== '') &&
-            $form.find('input[type="email"]').val() !== '' &&
-            $form.find('input[type="tel"]').val() !== '' &&
-            $form.find('textarea').val() !== '' &&
-            $form.find('input[type="radio"]:checked').length > 0;
+    const allFilled = 
+        $form.find('input[type="text"][required]').toArray().every(el => $(el).val() !== '') &&
+        $form.find('input[type="email"][required]').val() !== '' &&
+        $form.find('input[type="tel"][required]').val() !== '' &&
+        $form.find('textarea[required]').val() !== '' &&
+        $form.find('input[type="radio"]:checked').length > 0;
 
         console.log('allFilled:', allFilled); 
 
