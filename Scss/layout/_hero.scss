@@ -5,9 +5,9 @@
         object-fit: cover;
         display: block;
 
-        @media (max-width: 540px) {
-            height: 400px;
-        }              
+        @media (max-width:767px) {
+            height: 40vh;
+        }           
     }
     position: relative;
 
@@ -62,7 +62,7 @@
             }    
             
             @media (max-width: 540px) {
-                font-size: 14px;
+                font-size: 22px;
             }                  
         }
     }

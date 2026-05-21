@@ -479,9 +479,9 @@ a {
      object-fit: cover;
   display: block;
 }
-@media (max-width: 540px) {
+@media (max-width: 767px) {
   .hero img {
-    height: 400px;
+    height: 40vh;
   }
 }
 .hero {
@@ -540,7 +540,7 @@ a {
 }
 @media (max-width: 540px) {
   .hero__text p {
-    font-size: 14px;
+    font-size: 22px;
   }
 }
 .hero__text-short {
